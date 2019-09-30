@@ -1,4 +1,5 @@
 
+
 # Site
 
 [![Gem Version](https://badge.fury.io/rb/beautiful-jekyll-theme.svg)](https://badge.fury.io/rb/beautiful-jekyll-theme)
@@ -6,7 +7,7 @@
 ### Table of contents
 
 - [Setup](#CustomSetup)
-- 
+- [Drafts](https://jekyllrb.com/docs/posts//#drafts) 
 
 ## RSS
 - Setup Your RSS with Feedburner - http://feedburner.google.com/
@@ -17,8 +18,6 @@
 ## SSL
 https://hackernoon.com/set-up-ssl-on-github-pages-with-custom-domains-for-free-a576bdf51bc
 
-## DNS Records (have DNS updates propagated?)
-https://www.whatsmydns.net/#A/technikl.com
 
 ## Pull Updates
 https://github.com/techniklman/techniklman.github.io/compare/master...daattali:master

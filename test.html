@@ -11,12 +11,13 @@ https://jekyllrb.com/docs/variables/<br>
 
 {{site.url}}<br>
 {{site.time}}<br>
+site.baseurl: {{site.baseurl}}<br>
 {{ site.time | date_to_string }}<br>
 {{paginator.per_page}}
 
 
 {{ site.baseurl }}{% link _posts/2017-09-26-spinrite-in-a-vm.md %}<br>
-{{ site.baseurl }}{% link test.html %}<br>
+WRONG: {{ site.baseurl }}{% link test.html %}<br>
 {% link test.html %}<br>
 
 {% include footer.html %}
