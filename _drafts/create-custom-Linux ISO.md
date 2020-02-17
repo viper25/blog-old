@@ -94,12 +94,9 @@ In the next screen select and/or remove packages that are not needed:
 Click Generate when done.
 ![image](https://user-images.githubusercontent.com/327990/74653716-b7106900-51c3-11ea-86f8-e6c1b65f1b7a.png)
 
-Burn the generated ISO (in the Custom folder) using  [Rufus](https://rufus.ie/). 
-
-## Update a Custom ISO
-To update the ISO with latest OS updates or to add a package, there are the below options:
-
-* Create a disk - to create a new ISO with the customizations made earlier (and saved n the project folder)
-* Continue customizing - to enter the terminal screen to customize the ISO
+## Generate ISO & Delete the project
+The final screen does allow you to delete all project files (minus the generated disk image). If this is deleted, you cannot continue customizing this ISO. You can you the newly created Custom ISO as the starting point for the next custom ISO and create a new project folder.
  
-![image](https://user-images.githubusercontent.com/327990/74654588-977a4000-51c5-11ea-8285-11e05a8c9b90.png)
+![image](https://user-images.githubusercontent.com/327990/74657031-5c2e4000-51ca-11ea-8ac7-318851a23c35.png)
+
+Burn the generated ISO (in the Custom folder) using  [Rufus](https://rufus.ie/) to an USB to make a bootable USB. 
