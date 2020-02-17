@@ -6,6 +6,7 @@ published: false
 tags: Linux
 ---
 
+
 ## Use Cubic to create a custom ISO
 
 Whenever I travel and need to use a machine where I need to login with my credentails, I am wary or hesitant to do so. In such cases, I've always carried with myself a bootable USB that boots to a clean Ubuntu OS. That way, I am sure that the environment I enter my credentials on is clean. 
@@ -83,6 +84,11 @@ sudo dpkg -i google-chrome-stable_current_amd64.deb
 mkdir /opt/OpenVPN/Windscribe_OpenVPN
 ```
 Copy the `.ovpn` files and `auth-user-pass.txt` in this directory. Place the certs `ca.crt` and `ta.key` in a sub folder named `openvpn_cert`.
+
+### Install rclone
+A very useful tool when using Custom Linux ISOs is to use the [mount](https://rclone.org/commands/rclone_mount/) feature of rclone to mount cloud drives such as Google Drive, OneDrive, Box etc.
+
+[Install](https://rclone.org/downloads/) rclone and then [configure](https://rclone.org/commands/rclone_config/)  to get tokens for the cloud drive of your choice. Then [mount](https://rclone.org/commands/rclone_mount/) and enjoy! Do note the tokens for the cloud drives are stored at `~/.config/rclone/` and is valid usually for 30 days.
 
 ### Remove unwanted packages 
 ### Customize my shell
