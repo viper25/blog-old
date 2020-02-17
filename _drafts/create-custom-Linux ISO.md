@@ -74,7 +74,16 @@ The ISO image can be customized 	with additional settings that needn't be in the
 `sudo apt update && sudo apt upgrade`
 
 ### Install Chrome
+```bash
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+```
 ### Install VPN clients
+```bash
+mkdir /opt/OpenVPN/Windscribe_OpenVPN
+```
+Copy the `.ovpn` files and `auth-user-pass.txt` in this directory. Place the certs `ca.crt` and `ta.key` in a sub folder named `openvpn_cert`.
+
 ### Remove unwanted packages 
 ### Customize my shell
 
@@ -86,3 +95,11 @@ Click Generate when done.
 ![image](https://user-images.githubusercontent.com/327990/74653716-b7106900-51c3-11ea-86f8-e6c1b65f1b7a.png)
 
 Burn the generated ISO (in the Custom folder) using  [Rufus](https://rufus.ie/). 
+
+## Update a Custom ISO
+To update the ISO with latest OS updates or to add a package, there are the below options:
+
+* Create a disk - to create a new ISO with the customizations made earlier (and saved n the project folder)
+* Continue customizing - to enter the terminal screen to customize the ISO
+ 
+![image](https://user-images.githubusercontent.com/327990/74654588-977a4000-51c5-11ea-8285-11e05a8c9b90.png)
