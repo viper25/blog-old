@@ -6,6 +6,7 @@ published: false
 tags: Linux
 ---
 
+
 ## Use Cubic to create a custom ISO
 
 Whenever I travel and need to use a machine where I need to login with my credentails, I am wary or hesitant to do so. In such cases, I've always carried with myself a bootable USB that boots to a clean Ubuntu OS. That way, I am sure that the environment I enter my credentials on is clean. 
@@ -91,7 +92,11 @@ A very useful tool when using Custom Linux ISOs is to use the [mount](https://rc
 
 Do note, when configuring in the Cubic terminal, the tokens for the cloud drives are stored at `~/.config/rclone/`. Move this to your home folder for the target user (i.e. `ubuntu`); the current terminal in Cubic is root and will not be where rclone looks for the config when using the Custom ISO. Hence move it to `/home/ubuntu/.config`
 
-Create a helper script at `/usr/local/bin/` named say, `touch mount_cloud.sh` that will have the mount commands. When needed to mount just run `sudo mount_cloud.sh`
+Create a helper script at `/usr/local/bin/` named say, `touch mount_cloud.sh` that will have the mount command: 
+```bash
+rclone mount box:linux_mount /mnt/cloudrive/box
+```
+When needed to mount just run `sudo mount_cloud.sh`
 
 ### Remove unwanted packages 
 ```bash
