@@ -1,0 +1,5 @@
+TO DO
+
+https://github.com/jekyll/jekyll/pull/6727
+https://github.com/jekyll/jekyll/pull/7589
+Changes for baseurl: blog
