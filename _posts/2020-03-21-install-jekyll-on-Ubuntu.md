@@ -6,6 +6,8 @@ published: true
 tags: Linux, Jekyll
 ---
 
+There's quite a lot of info on how to install Jekyll on Ubuntu and most don't work. Here's how to install [Jekyll](https://jekyllrb.com/) on an Ubuntu Live USB.
+
 
 ## Use Cubic to create a custom ISO
 
