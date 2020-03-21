@@ -2,14 +2,14 @@
 layout: post
 title: Install Jekyll on Ubuntu
 subtitle: Install on Ubuntu Live USB/CD
-published: false
-tags: Linux
+published: true
+tags: Linux, Jekyll
 ---
 
 
 ## Use Cubic to create a custom ISO
 
-Follow Instructions [here](https://computingforgeeks.com/how-to-install-jekyll-on-ubuntu-18-04/).
+Adapted from [here](https://computingforgeeks.com/how-to-install-jekyll-on-ubuntu-18-04/).
 
 Update the system
 
@@ -35,13 +35,13 @@ export PATH=$HOME/gems/bin:$PATH
 ```
 
 ```bash
-gem install bundler
-gem install jekyll
+sudo gem install bundler
+sudo gem install jekyll
 ```
 
 Udpate Bundler
 ```bash
-bundle update --bundler
+sudo bundle update --bundler
 ```
 
 Done! Jekyll installed. 
