@@ -2,7 +2,7 @@
 
 # Site
 
-[![Gem Version](https://badge.fury.io/rb/beautiful-jekyll-theme.svg)](https://badge.fury.io/rb/beautiful-jekyll-theme)
+[![Known Vulnerabilities](https://snyk.io/test/github/viper25/blog/badge.svg?targetFile=Gemfile.lock)](https://snyk.io/test/github/viper25/blog?targetFile=Gemfile.lock)
 
 ### Table of contents
 
