@@ -58,3 +58,8 @@ bundle exec jekyll serve
 ```
 
 Browse to http://localhost:4000
+
+To server over an EC2 (for testing), run as 
+```bash
+bundle exec jekyll serve --host=0.0.0.0
+```
