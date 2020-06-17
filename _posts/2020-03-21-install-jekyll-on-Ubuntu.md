@@ -41,7 +41,9 @@ sudo gem install bundler
 sudo gem install jekyll
 ```
 
-Udpate Bundler
+Update Bundler
+
+Navigate to the root directory of the Jekyll site (that contains the `Gemfile`) and run:
 ```bash
 sudo bundle update --bundler
 ```
