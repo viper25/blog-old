@@ -8,12 +8,7 @@ tags: Linux, Jekyll
 
 There's quite a lot of info on how to install Jekyll on Ubuntu and most don't work. Here's how to install [Jekyll](https://jekyllrb.com/) on an Ubuntu Live USB.
 
-
-## Use Cubic to create a custom ISO
-
-Adapted from [here](https://computingforgeeks.com/how-to-install-jekyll-on-ubuntu-18-04/).
-
-Update the system
+This was tested on an Amazon EC2 running Ubuntu. Once SSH'd into the system:
 
 ```bash
 sudo apt update
@@ -36,22 +31,18 @@ export GEM_HOME=$HOME/gems
 export PATH=$HOME/gems/bin:$PATH
 ```
 
-```bash
-sudo gem install bundler
-sudo gem install jekyll
-```
-
 Update Bundler
 
 Navigate to the root directory of the Jekyll site (that contains the `Gemfile`) and run:
+
+
 ```bash
+sudo gem install bundler
+sudo gem install jekyll
 sudo bundle update --bundler
 ```
 
-Done! Jekyll installed. 
-
-
-Build your site and make it available on a local server
+Done! Jekyll installed. Build your site and make it available on a local server:
 
 ```bash
 bundle exec jekyll serve
