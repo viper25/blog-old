@@ -42,6 +42,13 @@ sudo gem install jekyll
 sudo bundle update --bundler
 ```
 
+{: .box-error}
+For some Jekyll sites, if you get an error such as 
+`An error occurred while installing nokogiri (1.10.10), and Bundler cannot continue.
+Make sure that ``gem install nokogiri -v '1.10.10' --source 'https://rubygems.org/'`` succeeds before bundling.`, run `sudo apt-get install build-essential patch ruby-dev zlib1g-dev liblzma-dev`
+
+
+
 Done! Jekyll installed. Build your site and make it available on a local server:
 
 ```bash
