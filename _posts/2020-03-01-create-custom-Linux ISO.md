@@ -50,9 +50,11 @@ We now enter a terminal where we do the "customization" of our ISO. We are prese
 
 ### Create a Bootstrap script
 
-First, create a bootstrap script named say `vjk-boot.sh` in `/usr/local/bin` with 755 permission). This is to be run manually (or on startup of the ISO) to do the following:
+First, create a bootstrap script named say `my-boot.sh` in `/usr/local/bin` with 755 permission). This is to be run manually (or on startup of the ISO) to do the following:
 	* joins my home Wi-Fi (using `nmcli`)
-	* Calls a hosted script that does a bunch of other stuff (listed later below). This is where I keep customized scripts that I can change any time. An example of this bootstrap script would be:
+	* Calls a hosted script that does a bunch of other stuff (e.g. connecting to a VPN, mounting folders etc.). 
+	
+An example of this bootstrap script would be:
 	
 ```bash
 #!/bin/bash
